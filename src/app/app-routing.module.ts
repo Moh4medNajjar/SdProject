@@ -9,7 +9,7 @@ const routes: Routes = [
   { path: 'demande', component: DemandeComponent },
   { path: 'info', component: InfoComponent },
   { path: 'login', component: LoginComponent },
-  { path: '**', redirectTo: '/demande' }
+  { path: '**', redirectTo: '/login' }
 ];
 
 
