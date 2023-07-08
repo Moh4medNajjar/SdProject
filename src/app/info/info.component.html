@@ -1,0 +1,110 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-lg-1 my-5">
+      <mat-card class="mat-elevation-z12">
+        <mat-card-content>
+          <h2 class="text-start">Bonjour! <br> Et si on faisait connaissance..</h2>
+          <form action="">
+            <div class="d-flex">
+              <i class="fa fa-user my-1  mx-1 fs-5" style="color:#A5BC13"></i>
+              <h2 style="color:#A5BC13">Vos Coordonnées</h2>
+            </div>
+            <mat-form-field class="col-3">
+              <input
+                matInput
+                placeholder="Nom*"
+                required
+                name="nom"
+                ngModel
+                #nom="ngModel">
+                <mat-error *ngIf="nom.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3 offset-1">
+              <input
+                matInput
+                placeholder="Prénom*"
+                required
+                name="prenom"
+                ngModel
+                #prenom="ngModel">
+                <mat-error *ngIf="prenom.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3  offset-1">
+              <input
+                matInput
+                placeholder="Nationalité*"
+                required
+                name="nat"
+                ngModel
+                #nat="ngModel">
+                <mat-error *ngIf="nat.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3">
+              <input
+                matInput
+                placeholder="Numéro d'identification*"
+                required
+                name="num"
+                ngModel
+                #num="ngModel">
+                <mat-error *ngIf="num.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3 offset-1">
+              <input
+                matInput
+                placeholder="Adresse*"
+                required
+                name="adr"
+                ngModel
+                #adr="ngModel">
+                <mat-error *ngIf="adr.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3  offset-1">
+              <input
+                matInput
+                placeholder="Sexe*"
+                required
+                name="sexe"
+                ngModel
+                #sexe="ngModel">
+                <mat-error *ngIf="sexe.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3">
+              <input
+                matInput
+                placeholder="Email"
+                required
+                name="email"
+                ngModel
+                #email="ngModel">
+                <mat-error *ngIf="email.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-form-field class="col-3 offset-1">
+              <input
+                matInput
+                placeholder="Téléphone"
+                required
+                name="tel"
+                ngModel
+                #tel="ngModel">
+                <mat-error *ngIf="tel.invalid">Ce champs est obligatoire</mat-error>
+            </mat-form-field>
+            <mat-checkbox class="col-10 my-5">J'ai lu et j'accepte les conditions générales d'utilisation</mat-checkbox>
+            <div class="col-lg-6 offset-lg-7 col-sm-12">
+              <button
+              mat-raised-button
+              class="login-button bg-success text-light mx-2 my-2 ">
+              <i class="fa fa-check"></i>
+              Soumettre
+              </button>
+              <button type="button" class="btn btn-outline-success my-2"><i class="fa-sharp fa-regular fa-circle-down"></i>Télécharger doc</button>
+            </div>
+
+          </form>
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+
+
+mat-card {
+
+  margin: 10% auto;
+  border-radius: 8px;
+}
+mat-form-field, mat-checkbox {
+
+  display: block;
+  margin: auto;
+}
+mat-card-content {
+  margin-top: 20px;
+}
+
+.login-button {
+  margin-top: 20px;
+  display: block;
+
+  margin: 20px auto;
+}
+
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.mat-card {
+  max-width: 400px;
+  width: 100%;
+}
+
+.mat-tab-group {
+  width: 100%;
+}
+
+
